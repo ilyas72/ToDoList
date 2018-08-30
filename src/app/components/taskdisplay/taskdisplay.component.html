@@ -1,0 +1,28 @@
+<!-- <mat-toolbar color="primary">
+  <span>Task</span>
+</mat-toolbar>
+
+<mat-card class="Walk">Walk the dog</mat-card> 
+
+
+
+<mat-card>Finish Workshop 3 <br>High</mat-card> -->
+
+<mat-card>
+  <mat-card-header>
+      <mat-card-title>Tasks</mat-card-title>
+  </mat-card-header>
+
+  <!-- Loop thru items -->
+  <mat-card *ngFor="let t of taskListDisplay; let i=index">
+    <mat-card-header>{{t.Description}}</mat-card-header>
+    <!-- <mat-card-subtitle>{{t.Priority}}</mat-card-subtitle> -->
+    <mat-card-content>
+      <p>{{t.Priority}}</p>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+</mat-card>
