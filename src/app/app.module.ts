@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.modules';
 import { TaskentryComponent } from './components/taskentry/taskentry.component';
 import { TaskdisplayComponent } from './components/taskdisplay/taskdisplay.component';
-
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { TaskdisplayComponent } from './components/taskdisplay/taskdisplay.compo
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    MatMomentDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

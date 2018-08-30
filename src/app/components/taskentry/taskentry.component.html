@@ -2,23 +2,30 @@
 fxLayout="column" fxlayoutAlign="end" fxLayoutGap="2vw">
 
 <mat-form-field>
-    <input matInput name="Description" placeholder="Description" ngModel>
+    <input matInput name="Description" placeholder="Description" ngModel required>
 </mat-form-field>
 
 <span>Priority:</span>
- <mat-radio-group name="Priority" ngModel>
+ <mat-radio-group name="Priority" ngModel fxLayout="row" fxlayoutAlign="end" fxLayoutGap="2vw">
     <mat-radio-button class="radio" value="3">High</mat-radio-button>
     <mat-radio-button class="radio" value="2">Medium</mat-radio-button>
     <mat-radio-button class="radio" value="1">Low</mat-radio-button>
 </mat-radio-group>
 
 <mat-form-field>
-    <input matInput name="Due" placeholder="Due" ngModel>
+    <input matInput name="Due" placeholder="Due" ngModel required>
 </mat-form-field>
-<div class="button-row" fxLayout="column" fxlayoutAlign="end" fxLayoutGap="2vw">
-     <button mat-raised-button color="accent" type="submit">
+
+<div class="button-row" fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2vw">
+    
+        <button mat-raised-button color="accent" type="reset">
+                <mat-icon>clear</mat-icon>
+             Clear</button>
+    
+    <button mat-raised-button color="accent" type="submit">
          <mat-icon>add_circle</mat-icon>
       Add</button>
+
 </div>
 
 

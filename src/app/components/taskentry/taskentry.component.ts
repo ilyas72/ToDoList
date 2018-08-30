@@ -18,9 +18,8 @@ export class TaskentryComponent implements OnInit {
   }
 
   button_pressed_add_to_list(myform) {
-    console.log("button clicked");
     this.taskListEntry.push(myform.value);
-    console.log(this.taskListEntry);
+    myform.reset();
   }
 
 }
